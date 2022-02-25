@@ -1,14 +1,15 @@
-const { Schema, model } = require("mongoose");
+const { Schema, model } = require('mongoose');
 
 const CommentSchema = new Schema({
   writtenBy: {
     type: String
   },
-  comentBody: {
+  commentBody: {
     type: String
   },
   createdAt: {
-    type: Date.now
+    type: Date,
+    default: Date.now
   }
 });
 
